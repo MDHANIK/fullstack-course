@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h5,
+h6,
+a {
+	font-family: "Poppins", sans-serif;
+}
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 1.9em;
+}
+h3 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.6em;
+}
+h5 {
+	font-size: 1.4em;
+}
+h6 {
+	font-size: 1em;
+}
+.navbar {
+	border: 0;
+	z-index: 9999;
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+.main-title {
+	margin: 30px 20px;
+}
+.common-section {
+	margin: 30px 0;
+}
+.common-section .row {
+	margin: 0;
+}
+.service-boxs .box {
+	margin: 15px 0;
+}
+.service-boxs .box .inner-container {
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+.service-boxs .box .inner-container a {
+	white-space: nowrap;
+}
+.box .inner-container::after {
+	content: "";
+	height: 6px;
+	width: 0;
+	bottom: 0;
+	left: 15px;
+	position: absolute;
+	transition: 0.5s ease all;
+}
+.box .inner-container:hover::after {
+	width: calc(100% - 30px);
+}
+.box .inner-container::after {
+	background-color: #5f5f5f;
+}
+.main-header .navbar .navbar-nav li a {
+	padding: 15px;
+}
+@media (min-width: 1200px) {
+	.navbar-expand-lg {
+		-ms-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		font-family: "Poppins", sans-serif;
+		word-spacing: normal;
+		padding: 10px 30px;
+	}
+}
+@media (max-width: 991px) {
+	.main-header .navbar .navbar-nav li {
+		border-bottom: 1px solid #757575;
+		text-align: center;
+	}
+	.main-header .navbar .navbar-nav li a {
+		padding: 10px;
+	}
+}
